@@ -8,7 +8,7 @@ public class Main {
             ApplicationContext context = new ApplicationContext("org.example.myapp");
             MyBean bean = (MyBean) context.getBean("mybean");
             // 使用bean...
-            System.out.println(bean);
+            System.out.println(bean.getInnerBean().getName());
         } catch (Exception e) {
             e.printStackTrace();
         }
